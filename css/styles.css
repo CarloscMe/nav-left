@@ -48,7 +48,7 @@ ul{
     width: 100%;
     display: flex;
     flex-direction: column;
-    overflow-y: scroll;
+  /*overflow-y: scroll;*/
     scrollbar-width: none;
 }
 
@@ -94,8 +94,41 @@ code, span {
 }
 
 @media (max-width: 800px) {
+
+    body{
+      grid-template-areas:
+      "nav"
+      "main";
+    }
+
     #navbar{
-    display: none;
+      height: 15dvh;
+      position: static;
+      align-items: center;
+      justify-content: space-evenly;
+      border: 0;
+    }
+
+    header{
+        position: static;
+        padding: 1rem;
+    }
+
+    ul{
+        flex-direction: row;
+        justify-content: space-evenly;
+        overflow-x: scroll;
+        padding: 1.2rem;
+    }
+
+    ul li{
+        padding: 0;
+        border: 0;
+        font-size: small;
+    }
+
+    a{
+      margin: 0;
     }
 }
 
