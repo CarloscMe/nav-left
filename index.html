@@ -39,9 +39,9 @@
             y modernas.</p>
 
             <code>
-            let a = 4; <br>
-            a + = 5; <br>
-            console.log(a);
+                <span>let a = 4;</span>
+                <span>a + = 5;</span>
+                <span>console.log(a);</span>
             </code>
 
             <li>su facil sintaxis lo hace versatil a la hora de programar.</li>
@@ -59,15 +59,18 @@
             Las funciones también son fundamentales en JS, pudiendo ser utilizadas como objetos de primera clase.
             </p>
             <code>
-                let a = 5;
-                let b = 10;
-                let resultado = 0; <br>
-                resultado = a + b;  <br>
-                if (resultado > 10) { 
-                    console.log("El resultado es mayor que 10"); <br>
-                } else {
-                    console.log("El resultado es menor o igual a 10");
-                }
+                <span>let a = 5;</span>
+                <span>let b = 10;</span>
+                <span>let resultado;</span>
+                <span>resultado = a + b;</span>
+                <span>
+                    if (resultado > 10) { 
+                    console.log("El resultado es mayor que 10");};
+                </span>
+                <span>
+                   else {
+                   console.log("El resultado es menor a 10");};
+                </span>
                 </code>
             <li>este es un ejemplo claro de su estructura</li>
         </section>
@@ -76,16 +79,16 @@
            
             <h2>javascript tipos de datos</h2>
            
-            <p>En JavaScript, los tipos de datos se dividen en dos categorías principales: tipos primitivos y tipos de referencia. Los tipos primitivos <br>
-            incluyen números (que pueden ser enteros o decimales), cadenas de texto (strings), booleanos (valores true o false), null <br> 
+            <p>En JavaScript, los tipos de datos se dividen en dos categorías principales: tipos primitivos y tipos de referencia. Los tipos primitivos 
+            incluyen números (que pueden ser enteros o decimales), cadenas de texto (strings), booleanos (valores true o false), null
             (un valor especial que representa la ausencia de un valor), undefined (un valor que se asigna automáticamente a las variables no inicializadas)
             y símbolos (un valor único e inmutable usado para identificadores).</p>
             <p>Además, existe el BigInt, que permite trabajar con enteros de tamaño arbitrario. Los tipos de referencia son objetos, como objetos literales, arrays, funciones y fechas,
             que se almacenan por referencia, lo que significa que múltiples variables pueden hacer referencia a la misma estructura de datos. A diferencia de los tipos primitivos, los tipos de referencia
             no se copian al asignarlos a nuevas variables, sino que ambas variables apuntan a la misma ubicación en memoria.</p>
             <code>
-            let numero = 3; <br>
-            console.log(typeof numero); //con este operador se mira el tipo de dato//  
+                <span>let numero = 3;</span>
+                <span>console.log(typeof numero); //con este operador se mira el tipo de dato</span>
             </code>
             <li>ejmplo claro que se puede aplicar.</li>
         </section>
@@ -94,17 +97,17 @@
           
             <h2> javascript variables</h2>
           
-            <p>En JavaScript, las variables se utilizan para almacenar datos y se pueden declarar utilizando las palabras clave var, let y const. <br>
+            <p>En JavaScript, las variables se utilizan para almacenar datos y se pueden declarar utilizando las palabras clave var, let y const.
             var es la forma más antigua y tiene un alcance global o de función, lo que puede generar problemas de ambigüedad. let permite declarar variables
             con un alcance de bloque, lo que ayuda a evitar esos problemas, y se puede reasignar su valor.</p>
-            <p>const, por su parte, también tiene un alcance de bloque, pero no permite la reasignación de su valor, lo que la hace ideal para constantes. <br>
+            <p>const, por su parte, también tiene un alcance de bloque, pero no permite la reasignación de su valor, lo que la hace ideal para constantes.
             Estas tres formas definen cómo se maneja el alcance y la reasignación de las variables en un programa.</p>
             <code>
-            var x = 10; <br>  
-            let y = 20; <br> 
-            const z = 30;
+                <span>var x = 10;</span> 
+                <span>let y = 20; </span>
+                <span>const z = 30;</span>
             </code>
-            <li>en js hay 3 tipos de variables se recomienda usar <span>let y const</span></li>
+            <li>en js hay 3 tipos de variables se recomienda usar <strong>let y const</strong></li>
         </section>
 
         <section class="main-section" id="javascript_dom">
@@ -118,15 +121,15 @@
             Esta capacidad de manipulación en tiempo real es clave para crear páginas web interactivas y dinámicas.
             El DOM convierte a JavaScript en una herramienta poderosa para el desarrollo web.</p>
             <code>
-            const cambiarTitulo = () => { <br>
-            document.getElementById("titulo").textContent = "¡Título cambiado!";
-            }; <br> 
-            document.getElementById("boton").addEventListener("click", cambiarTitulo); 
+                <span>
+                  const cambiarTitulo = () => { 
+                  document.getElementById("titulo").textContent = "¡Título cambiado!";}; 
+                </span> 
+                <span>document.getElementById("boton").addEventListener("click", cambiarTitulo);</span> 
             </code>
             <li>en este ejemplo se muestra como manipular html con una hoja externa de js.</li>
         </section>
 
     </main>
-
 </body>
 </html>

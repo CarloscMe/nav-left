@@ -79,17 +79,23 @@ main {
 }
 
 section, p{
-    margin: 5px 0 5px 20px;
+    margin-left: 20px;
     padding: 10px;
 }
 
 code{
     display: block;
     margin: 5px 0 10px 30px;
+    padding: .5rem;
     background: rgba(128, 128, 128, 0.11);
 }
 
-code, span {
+span{
+    display: block;
+    margin: 5px;
+}
+
+code, span, strong {
     text-transform: lowercase;
 }
 
@@ -130,16 +136,13 @@ code, span {
     a{
       margin: 0;
     }
-}
 
-@media (min-width: 1900px) {
-
-    #navbar {
-        font-size: 2em;
+    section, p, code{
+        margin: 5px 0 5px 0;
+        font-size: 1.2rem;
     }
 
-    main{
-        gap: 10px;
-        font-size: 2.5em;
+    li{
+        margin-top: 5px;
     }
 }
