@@ -108,7 +108,7 @@ code, span, strong {
     }
 
     #navbar{
-      height: 15dvh;
+      height: 20dvh;
       position: static;
       align-items: center;
       justify-content: space-evenly;
@@ -122,6 +122,8 @@ code, span, strong {
 
     ul{
         align-items: start;
+        flex-grow: 2;
+        border: 1px solid blue;
     }
 
     ul li{
@@ -135,7 +137,6 @@ code, span, strong {
 
     section, p, code{
         margin: 5px 0 5px 0;
-        font-size: 1.2rem;
     }
 
     li{
