@@ -14,6 +14,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     display: grid;
     grid-template-areas: "nav main";
+    width: 100%;
 }
 
 #navbar {
@@ -40,8 +41,9 @@ header {
     width: 100%;
 }
 
-li{
+.info{
     list-style-type: circle;
+    margin: 10px 0 10px 20px;
 }
 
 ul{
@@ -66,11 +68,7 @@ a {
 }
 
 main {
-    display: flex;
-    align-items: flex-start;
-    flex-flow: column wrap;
-    justify-content: center;
-    gap: 5px;
+    width: 100%;
     grid-area: main;
 }
 
@@ -79,13 +77,12 @@ main {
 }
 
 section, p{
-    margin-left: 20px;
-    padding: 10px;
+    margin: 10px 10px 10px 20px;
 }
 
 code{
     display: block;
-    margin: 5px 0 10px 30px;
+    margin: 10px 10px 10px 20px;
     padding: .5rem;
     background: rgba(128, 128, 128, 0.11);
 }
@@ -108,10 +105,9 @@ code, span, strong {
     }
 
     #navbar{
-      height: 20dvh;
+      display:none;
+      height: 15dvh;
       position: static;
-      align-items: center;
-      justify-content: space-evenly;
       border: 0;
     }
 
@@ -121,8 +117,8 @@ code, span, strong {
     }
 
     ul{
+        width: 50%;
         align-items: start;
-        flex-grow: 2;
         border: 1px solid blue;
     }
 
@@ -133,14 +129,6 @@ code, span, strong {
 
     a{
       margin: 0;
-    }
-
-    section, p, code{
-        margin: 5px 0 5px 0;
-    }
-
-    li{
-        margin-top: 5px;
     }
 
     #javascript_introducion{
