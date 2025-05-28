@@ -125,7 +125,12 @@
                   const cambiarTitulo = () => { 
                   document.getElementById("titulo").textContent = "¡Título cambiado!";}; 
                 </span> 
-                <span>document.getElementById("boton").addEventListener("click", cambiarTitulo);</span> 
+                <span>
+                  const boton = document.getElementById("boton");
+                </span>
+                <span>
+                  boton.addEventListener("click", cambiarTitulo);
+                </span>
             </code>
             <li  class="info">en este ejemplo se muestra como manipular html con una hoja externa de js.</li>
         </section>
