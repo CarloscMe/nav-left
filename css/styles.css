@@ -76,13 +76,12 @@ main {
     margin-top: 2.5rem;
 }
 
-section, p{
+section, p, code{
     margin: 10px 10px 10px 20px;
 }
 
 code{
     display: block;
-    margin: 10px 10px 10px 20px;
     padding: .5rem;
     background: rgba(128, 128, 128, 0.11);
 }
