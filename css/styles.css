@@ -99,6 +99,13 @@ code, span, strong {
     white-space: normal;
 }
 
+button{
+    background: #027a8f;
+    color: azure;
+    padding: .5rem;
+    display: none;
+}
+
 @media (max-width: 800px) {
 
     body{
@@ -107,27 +114,44 @@ code, span, strong {
       "main";
     }
 
-    #navbar{
-      display:none;
+    #navbar{   
       height: 15dvh;
-      position: static;
+      position: relative;
       border: 0;
     }
 
     header{
-        position: static;
+        position: relative;
         padding: .7rem;
     }
 
+    h1{
+        font-size: small;
+        text-align: end;
+    }
+
+    button{
+        display: inline-block;
+    }
+
     ul{
+        display: none;
+        position: absolute;
+        z-index: 50;
         width: 50%;
-        align-items: start;
+        justify-content: space-evenly;
         border: 1px solid blue;
+        background: #0a0a0a;
+        color: rgb(255, 255, 255);
     }
 
     ul li{
         font-size: small;
         border: 0;
+    }
+
+    section, p, code{
+        margin: 2px 5px;
     }
 
     a{
