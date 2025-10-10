@@ -116,12 +116,10 @@ button{
 
     #navbar{   
       height: 15dvh;
-      position: relative;
-      border: 0;
+      position: static;
     }
 
     header{
-        position: relative;
         padding: .7rem;
     }
 
@@ -136,17 +134,20 @@ button{
 
     ul{
         display: none;
-        position: absolute;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
         z-index: 50;
-        width: 50%;
-        justify-content: space-evenly;
-        border: 1px solid blue;
-        background: #0a0a0a;
+        width: 70%;
+        background: #eaecf0;
         color: rgb(255, 255, 255);
     }
 
     ul li{
         font-size: small;
+        margin: 1px 0;
+        background: #ffffff;
         border: 0;
     }
 
